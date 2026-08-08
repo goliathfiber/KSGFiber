@@ -1,4 +1,4 @@
-import { MapPin, ArrowRight, Check } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 import PageHero from '../../components/PageHero';
 import SEO from '../../components/SEO';
 import { breadcrumbSchema } from '../../lib/structuredData';
@@ -11,7 +11,7 @@ interface LocationData {
   description: string;
   heroImage: string;
   isHQ?: boolean;
-  communities: string[];
+  communities: { name: string; status: 'Sign Up Now' | 'Planned' }[];
   industries: { icon: ReactNode; title: string; desc: string }[];
   highlights: { label: string; value: string }[];
   bodyContent: string[];
@@ -58,14 +58,22 @@ export default function LocationTemplate({ data }: { data: LocationData }) {
                   <MapPin className="w-5 h-5 text-fiber-blue" />
                   Communities We Serve
                 </h3>
-                <div className="grid grid-cols-2 gap-2">
-                  {data.communities.map((c) => (
-                    <div key={c} className="flex items-center gap-2 font-body text-[14px] text-slate-200">
-                      <Check className="w-4 h-4 text-signal-green flex-shrink-0" />
-                      {c}
+                <div className="space-y-3">
+                  {data.communities.map((community) => (
+                    <div key={community.name} className="flex items-center justify-between gap-4 rounded-lg border border-white/10 bg-[#0a0e1b] px-4 py-3">
+                      <span className="font-display font-semibold text-[15px] text-white">{community.name}</span>
+                      <span className={`shrink-0 rounded-full px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-[1px] ${community.status === 'Sign Up Now' ? 'bg-signal-green/15 text-signal-green' : 'bg-fiber-blue/15 text-blue-300'}`}>
+                        {community.status}
+                      </span>
                     </div>
                   ))}
                 </div>
+                <button
+                  onClick={() => openContactModal(`Bring KSG Fiber to ${data.state}`)}
+                  className="mt-6 inline-flex items-center gap-2 font-display text-[14px] font-bold text-signal-green hover:text-white transition-colors"
+                >
+                  Bring KSG Fiber To Your Town <ArrowRight className="w-4 h-4" />
+                </button>
               </div>
               <div className="grid grid-cols-2 gap-4 mt-6">
                 {data.highlights.map((h) => (
