@@ -2,9 +2,7 @@ import { useState, useEffect, useRef, FormEvent } from 'react';
 import { X, CheckCircle, Loader2 } from 'lucide-react';
 import { useContactModal } from '../context/ContactModalContext';
 
-const STATES = [
-  'Wisconsin', 'Minnesota', 'Iowa', 'Illinois', 'Michigan', 'Other',
-];
+const STATES = ['Iowa'];
 
 interface FormData {
   fullName: string;
@@ -199,7 +197,7 @@ export default function ContactModal() {
                   <label htmlFor="cm-city" className="block font-display text-[13px] font-semibold text-slate-700 mb-1">
                     City
                   </label>
-                  <input id="cm-city" type="text" required value={form.city} onChange={(e) => update('city', e.target.value)} className={inputCls} placeholder="Green Bay" />
+                  <input id="cm-city" type="text" required value={form.city} onChange={(e) => update('city', e.target.value)} className={inputCls} placeholder="Van Meter" />
                 </div>
                 <div>
                   <label htmlFor="cm-state" className="block font-display text-[13px] font-semibold text-slate-700 mb-1">
