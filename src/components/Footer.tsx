@@ -16,11 +16,7 @@ const resourceLinks = [
 ];
 
 const locationLinks = [
-  { label: 'Wisconsin', to: '/locations/wisconsin' },
-  { label: 'Minnesota', to: '/locations/minnesota' },
   { label: 'Iowa', to: '/locations/iowa' },
-  { label: 'Illinois', to: '/locations/illinois' },
-  { label: 'Michigan', to: '/locations/michigan' },
 ];
 
 const companyLinks = [
@@ -37,7 +33,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Logo variant="light" />
             <p className="font-body text-[14px] text-slate-400 mt-4 leading-relaxed">
-              Your neighbors in fiber. Serving the Midwest from Van Meter, Iowa.
+              Your neighbors in fiber. Serving Iowa from Van Meter.
             </p>
             <div className="mt-6 space-y-3">
               <a href="tel:+17757434237" className="flex items-center gap-2 text-[14px] text-slate-300 hover:text-white transition-colors">
