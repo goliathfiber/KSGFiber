@@ -57,7 +57,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center bg-midnight overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/design/hero-bg-gemini.jpg"
+            src={`${import.meta.env.BASE_URL}design/hero-bg-gemini.jpg`}
             alt="Fiber connectivity reaching a rural Midwest community"
             className="w-full h-full object-cover opacity-75"
           />
@@ -98,7 +98,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <img src="/design/worker-tech2.png" alt="KSG Fiber field technician" className="hidden xl:block absolute right-0 bottom-[-7rem] h-[82%] object-contain drop-shadow-[0_24px_60px_rgba(0,0,0,0.7)] pointer-events-none" />
+        <img src={`${import.meta.env.BASE_URL}design/worker-tech2.png`} alt="KSG Fiber field technician" className="hidden xl:block absolute right-0 bottom-[-7rem] h-[82%] object-contain drop-shadow-[0_24px_60px_rgba(0,0,0,0.7)] pointer-events-none" />
         <div className="absolute bottom-0 left-0 right-0">
           <div className="gradient-bar h-1" />
         </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/design/fiber-field.jpg"
+            src={`${import.meta.env.BASE_URL}design/fiber-field.jpg`}
             alt="Aerial view of a small Midwest town surrounded by farmland"
             className="w-full h-full object-cover"
           />
@@ -206,7 +206,7 @@ export default function HomePage() {
             </div>
             <div className="hidden lg:block">
               <img
-                src="/design/salesagentnew2.png"
+                src={`${import.meta.env.BASE_URL}design/salesagentnew2.png`}
                 alt="KSG Fiber plan specialist"
                 className="max-h-[620px] mx-auto object-contain drop-shadow-[0_24px_60px_rgba(0,0,0,0.7)]"
               />
@@ -294,7 +294,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/design/community.png"
+            src={`${import.meta.env.BASE_URL}design/community.png`}
             alt="Sunset over a quiet rural town"
             className="w-full h-full object-cover"
           />
