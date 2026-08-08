@@ -122,7 +122,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { icon: Users, value: '25,000+', label: 'Customers Served' },
+              { icon: Users, value: '10s of Thousands', label: 'Served on Networks We Have Built' },
               { icon: Zap, value: '5,000+', label: 'Miles of Fiber' },
               { icon: Heart, value: '4.9/5', label: 'Customer Rating' },
             ].map(({ icon: Icon, value, label }) => (
