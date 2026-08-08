@@ -167,7 +167,7 @@ export default function ResidentialPage() {
             </div>
             <div className="hidden lg:block">
               <img
-                src="/avecalan_Editorial_lifestyle_photograph_capturing_a_candid_mome_a746d7cb-5a61-41f4-94a5-ba030976bf68.png"
+                src={`${import.meta.env.BASE_URL}avecalan_Editorial_lifestyle_photograph_capturing_a_candid_mome_a746d7cb-5a61-41f4-94a5-ba030976bf68.png`}
                 alt="Father working from home on laptop while holding his baby"
                 className="rounded-xl shadow-2xl"
               />
