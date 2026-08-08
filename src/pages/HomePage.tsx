@@ -31,13 +31,13 @@ const testimonials = [
   {
     quote: "As a remote worker in a small town, I need reliable uploads. KSG's symmetrical speeds mean my video calls are crystal clear every single time.",
     name: 'James R.',
-    location: 'Adel, IA',
+    location: 'Van Meter, IA',
     rating: 5,
   },
   {
     quote: "We run a grain and cattle operation and KSG Fiber handles all our IoT monitoring, bookkeeping software, and our kids' homework without a hiccup.",
     name: 'Linda & Tom K.',
-    location: 'Winterset, IA',
+    location: 'Van Meter, IA',
     rating: 5,
   },
 ];
