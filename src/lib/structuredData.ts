@@ -7,7 +7,7 @@ export function organizationSchema() {
     name: 'KSG Fiber',
     url: SITE_URL,
     logo: `${SITE_URL}/KSG_LOGO_FULL.png`,
-    description: 'Regional fiber optic internet provider serving homes and businesses across the Midwest.',
+    description: 'Iowa fiber optic internet provider serving homes and businesses in local communities.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '408 Grant St. #6',
@@ -23,13 +23,7 @@ export function organizationSchema() {
       areaServed: ['US'],
       availableLanguage: ['English'],
     },
-    areaServed: [
-      { '@type': 'State', name: 'Wisconsin' },
-      { '@type': 'State', name: 'Minnesota' },
-      { '@type': 'State', name: 'Iowa' },
-      { '@type': 'State', name: 'Illinois' },
-      { '@type': 'State', name: 'Michigan' },
-    ],
+    areaServed: [{ '@type': 'State', name: 'Iowa' }],
   };
 }
 
