@@ -16,13 +16,22 @@ export function organizationSchema() {
       postalCode: '50261',
       addressCountry: 'US',
     },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+1-775-743-4237',
-      contactType: 'customer service',
-      areaServed: ['US'],
-      availableLanguage: ['English'],
-    },
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: ['+1-775-743-4237', '+1-515-363-8992'],
+        contactType: 'customer service',
+        areaServed: ['US'],
+        availableLanguage: ['English'],
+      },
+      {
+        '@type': 'ContactPoint',
+        telephone: '+1-515-363-8992',
+        contactType: 'customer service',
+        areaServed: ['US'],
+        availableLanguage: ['English'],
+      },
+    ],
     areaServed: [{ '@type': 'State', name: 'Iowa' }],
   };
 }
