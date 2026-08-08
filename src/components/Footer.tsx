@@ -40,6 +40,10 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-signal-green" />
                 (775) 743-4237
               </a>
+              <a href="tel:+15153638992" className="flex items-center gap-2 text-[14px] text-slate-300 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 text-signal-green" />
+                (515) 363-8992
+              </a>
               <a href="mailto:hello@ksgfiber.com" className="flex items-center gap-2 text-[14px] text-slate-300 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-signal-green" />
                 hello@ksgfiber.com
