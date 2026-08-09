@@ -31,13 +31,13 @@ const testimonials = [
   {
     quote: "As a remote worker in a small town, I need reliable uploads. KSG's symmetrical speeds mean my video calls are crystal clear every single time.",
     name: 'James R.',
-    location: 'Adel, IA',
+    location: 'Van Meter, IA',
     rating: 5,
   },
   {
     quote: "We run a grain and cattle operation and KSG Fiber handles all our IoT monitoring, bookkeeping software, and our kids' homework without a hiccup.",
     name: 'Linda & Tom K.',
-    location: 'Winterset, IA',
+    location: 'Van Meter, IA',
     rating: 5,
   },
 ];
@@ -57,17 +57,23 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center bg-midnight overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/design/hero-bg-gemini.jpg"
+            src={`${import.meta.env.BASE_URL}design/hero-bg-harvest-gold.jpg`}
             alt="Fiber connectivity reaching a rural Midwest community"
-            className="w-full h-full object-cover opacity-75"
+            className="w-full h-full object-cover brightness-[1.16] saturate-[1.08]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/85 to-midnight/50" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                'linear-gradient(90deg, rgba(6,16,34,0.82) 0%, rgba(6,16,34,0.68) 32%, rgba(6,16,34,0.28) 58%, rgba(6,16,34,0.06) 100%)',
+            }}
+          />
         </div>
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(ellipse at 30% 20%, rgba(27,58,107,0.3) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(244,123,32,0.15) 0%, transparent 40%)',
+              'radial-gradient(ellipse at 82% 14%, rgba(255,221,151,0.20) 0%, transparent 42%), radial-gradient(ellipse at 68% 72%, rgba(244,123,32,0.08) 0%, transparent 46%)',
           }}
         />
 
@@ -98,7 +104,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <img src="/design/worker-tech2.png" alt="KSG Fiber field technician" className="hidden xl:block absolute right-0 bottom-[-7rem] h-[82%] object-contain drop-shadow-[0_24px_60px_rgba(0,0,0,0.7)] pointer-events-none" />
+        <img src={`${import.meta.env.BASE_URL}design/worker-tech2.png`} alt="KSG Fiber field technician" className="hidden xl:block absolute right-0 bottom-[-7rem] h-[82%] object-contain drop-shadow-[0_24px_60px_rgba(0,0,0,0.7)] pointer-events-none" />
         <div className="absolute bottom-0 left-0 right-0">
           <div className="gradient-bar h-1" />
         </div>
@@ -165,7 +171,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/design/fiber-field.jpg"
+            src={`${import.meta.env.BASE_URL}design/fiber-field.jpg`}
             alt="Aerial view of a small Midwest town surrounded by farmland"
             className="w-full h-full object-cover"
           />
@@ -206,7 +212,7 @@ export default function HomePage() {
             </div>
             <div className="hidden lg:block">
               <img
-                src="/design/salesagentnew2.png"
+                src={`${import.meta.env.BASE_URL}design/salesagentnew2.png`}
                 alt="KSG Fiber plan specialist"
                 className="max-h-[620px] mx-auto object-contain drop-shadow-[0_24px_60px_rgba(0,0,0,0.7)]"
               />
@@ -294,7 +300,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/design/community.png"
+            src={`${import.meta.env.BASE_URL}design/community.png`}
             alt="Sunset over a quiet rural town"
             className="w-full h-full object-cover"
           />

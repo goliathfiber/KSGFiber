@@ -46,27 +46,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ksgfiber.com/locations/wisconsin</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ksgfiber.com/locations/minnesota</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ksgfiber.com/locations/iowa</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ksgfiber.com/locations/illinois</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ksgfiber.com/locations/michigan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

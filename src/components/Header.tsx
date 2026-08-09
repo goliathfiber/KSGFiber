@@ -20,11 +20,7 @@ const resources = [
 ];
 
 const locations = [
-  { label: 'Wisconsin', to: '/locations/wisconsin' },
-  { label: 'Minnesota', to: '/locations/minnesota' },
   { label: 'Iowa', to: '/locations/iowa' },
-  { label: 'Illinois', to: '/locations/illinois' },
-  { label: 'Michigan', to: '/locations/michigan' },
 ];
 
 function DropdownMenu({ label, items, dark }: { label: string; items: { label: string; to: string }[]; dark?: boolean }) {

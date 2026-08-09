@@ -11,14 +11,18 @@ export default function IowaPage() {
         heroImage: 'https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop',
         isHQ: true,
         communities: [
-          'Van Meter', 'Adel', 'Winterset', 'Des Moines Metro',
-          'Cedar Rapids', 'Quad Cities', 'Iowa City', 'Dubuque',
-          'Waterloo', 'Mason City', 'Decorah', 'Clinton',
+          { name: 'Van Meter', status: 'Sign Up Now' },
+          { name: 'Earlham', status: 'Sign Up Now' },
+          { name: 'Atlantic', status: 'Planned' },
+          { name: 'Exira', status: 'Planned' },
+          { name: 'Martensdale', status: 'Planned' },
+          { name: 'Winterset', status: 'Planned' },
+          { name: 'Audubon', status: 'Planned' },
         ],
         highlights: [
           { label: 'Headquarters', value: 'Van Meter' },
-          { label: 'Target Communities', value: '30+' },
-          { label: 'Planned Fiber Miles', value: '1,500+' },
+          { label: 'Sign Up Now', value: '2' },
+          { label: 'Planned Communities', value: '5' },
           { label: 'Fiber Optic', value: '100%' },
         ],
         industries: [
@@ -30,7 +34,7 @@ export default function IowaPage() {
         bodyContent: [
           'Iowa is home. KSG Fiber is headquartered in Van Meter and we\'re building outward from central Iowa to connect communities, businesses, and farms across the state with true fiber optic internet.',
           'Iowa\'s agriculture sector is rapidly modernizing with precision farming technology, GPS-guided equipment, and IoT sensors — all of which require reliable internet connectivity. KSG Fiber is building the infrastructure to support Iowa\'s agricultural future.',
-          'Our Iowa network extends from the Des Moines metro through the I-380 corridor to Cedar Rapids and Iowa City, and into the Quad Cities — bringing symmetrical fiber speeds to communities that have been underserved for too long.',
+          'Service sign-ups are currently available in Van Meter and Earlham. Atlantic, Exira, Martensdale, Winterset, and Audubon are planned communities as KSG Fiber continues its Iowa expansion.',
         ],
       }}
     />

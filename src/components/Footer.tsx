@@ -16,11 +16,7 @@ const resourceLinks = [
 ];
 
 const locationLinks = [
-  { label: 'Wisconsin', to: '/locations/wisconsin' },
-  { label: 'Minnesota', to: '/locations/minnesota' },
   { label: 'Iowa', to: '/locations/iowa' },
-  { label: 'Illinois', to: '/locations/illinois' },
-  { label: 'Michigan', to: '/locations/michigan' },
 ];
 
 const companyLinks = [
@@ -37,12 +33,16 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Logo variant="light" />
             <p className="font-body text-[14px] text-slate-400 mt-4 leading-relaxed">
-              Your neighbors in fiber. Serving the Midwest from Van Meter, Iowa.
+              Your neighbors in fiber. Serving Iowa from Van Meter.
             </p>
             <div className="mt-6 space-y-3">
               <a href="tel:+17757434237" className="flex items-center gap-2 text-[14px] text-slate-300 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 text-signal-green" />
                 (775) 743-4237
+              </a>
+              <a href="tel:+15153638992" className="flex items-center gap-2 text-[14px] text-slate-300 hover:text-white transition-colors">
+                <Phone className="w-4 h-4 text-signal-green" />
+                (515) 363-8992
               </a>
               <a href="mailto:hello@ksgfiber.com" className="flex items-center gap-2 text-[14px] text-slate-300 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-signal-green" />
