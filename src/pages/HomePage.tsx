@@ -57,7 +57,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center bg-midnight overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={`${import.meta.env.BASE_URL}design/hero-bg-gemini.jpg`}
+            src={`${import.meta.env.BASE_URL}design/hero-bg-harvest-gold.jpg`}
             alt="Fiber connectivity reaching a rural Midwest community"
             className="w-full h-full object-cover opacity-75"
           />
