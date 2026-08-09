@@ -59,15 +59,21 @@ export default function HomePage() {
           <img
             src={`${import.meta.env.BASE_URL}design/hero-bg-harvest-gold.jpg`}
             alt="Fiber connectivity reaching a rural Midwest community"
-            className="w-full h-full object-cover opacity-75"
+            className="w-full h-full object-cover brightness-[1.16] saturate-[1.08]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/85 to-midnight/50" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                'linear-gradient(90deg, rgba(6,16,34,0.82) 0%, rgba(6,16,34,0.68) 32%, rgba(6,16,34,0.28) 58%, rgba(6,16,34,0.06) 100%)',
+            }}
+          />
         </div>
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(ellipse at 30% 20%, rgba(27,58,107,0.3) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(244,123,32,0.15) 0%, transparent 40%)',
+              'radial-gradient(ellipse at 82% 14%, rgba(255,221,151,0.20) 0%, transparent 42%), radial-gradient(ellipse at 68% 72%, rgba(244,123,32,0.08) 0%, transparent 46%)',
           }}
         />
 
